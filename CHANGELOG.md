@@ -1,5 +1,47 @@
 # Changelog
 
+## [6.6.0](https://github.com/morluto/rea/compare/rea-agents-6.5.0...rea-agents-6.6.0) (2026-10-14)
+
+
+### Features
+
+* **website:** add contributors and complete the Greek edition ([#3520](https://github.com/morluto/rea/issues/3520)) ([569ef41](https://github.com/morluto/rea/commit/569ef4159db73931717825302b323fae7aa91bbf))
+
+
+### Bug Fixes
+
+* **analysis-view:** unify inert inline Evidence admission ([11b747f](https://github.com/morluto/rea/commit/11b747f29d5d073e20f08090f74cb157d4559bda))
+* **browser:** preserve passive network inventory uncertainty ([e79e014](https://github.com/morluto/rea/commit/e79e014f23cf5b5d59aa5e5681897dbcad73b44e))
+* **ci:** include GitHub action code in static cache inputs ([c0aa2e3](https://github.com/morluto/rea/commit/c0aa2e32b3f6799cb872cc80375d8afdcaa59fe9))
+* **ci:** invalidate GitHub entrypoint and package-scope caches ([#3522](https://github.com/morluto/rea/issues/3522)) ([eb44921](https://github.com/morluto/rea/commit/eb44921c4c3682e33c78508285629926e8ef241e)), closes [#3510](https://github.com/morluto/rea/issues/3510)
+* **ci:** require portable inventory reports on selected runs ([#3549](https://github.com/morluto/rea/issues/3549)) ([0f62373](https://github.com/morluto/rea/commit/0f623732bddfa27542a86cfc1c5fb34ee9e9a195)), closes [#3542](https://github.com/morluto/rea/issues/3542)
+* **contracts:** honor options outside the schema projection cache ([0df0e4f](https://github.com/morluto/rea/commit/0df0e4f53e43becae33846ebb3720e5dc8a72e34))
+* **contracts:** preserve array guidance across MCP schema profiles ([204b9f3](https://github.com/morluto/rea/commit/204b9f3ac140a993c3e458bb0e117de31818ab29))
+* **contracts:** reject NUL bytes in Frida, Rizin, and GDB local path inputs ([#3575](https://github.com/morluto/rea/issues/3575)) ([a732c85](https://github.com/morluto/rea/commit/a732c859ddd005a0179854897a645b531bf163d3))
+* **contracts:** reject NUL bytes in keyed archive and extraction paths ([#3606](https://github.com/morluto/rea/issues/3606)) ([efbc486](https://github.com/morluto/rea/commit/efbc486b9bf8ab46da16fdd6ed88128849e30e81))
+* **ghidra:** preserve PE PDB coverage facts ([#2933](https://github.com/morluto/rea/issues/2933)) ([0f55f24](https://github.com/morluto/rea/commit/0f55f247cdd2ae9bd7903d5e45962b19dfc233dc)), closes [#2259](https://github.com/morluto/rea/issues/2259)
+* **hopper:** skip non-file launcher candidates ([044fb91](https://github.com/morluto/rea/commit/044fb9127ac77dbb4d9992410f7596fc49dc446e))
+* **javascript:** track public CommonJS export receiver lifetimes ([#3567](https://github.com/morluto/rea/issues/3567)) ([7510404](https://github.com/morluto/rea/commit/75104040dffa9aa827e16f8f22a68307e48ff58d))
+* **managed:** compare nominal signatures across metadata builds ([#3059](https://github.com/morluto/rea/issues/3059)) ([eab789a](https://github.com/morluto/rea/commit/eab789aed74acd6ef7c15d509e0f3de350be2733))
+* **managed:** preserve enclosing identity in member comparisons ([#3079](https://github.com/morluto/rea/issues/3079)) ([1438422](https://github.com/morluto/rea/commit/1438422dfedf1de29368b595e09a04f1fc10750d))
+* **mcp:** bind catalog identity to output schema profiles ([c5fb86d](https://github.com/morluto/rea/commit/c5fb86d1948af0a287a581b29b2b1d554743c607))
+* **mcp:** honor Frida partial evidence retention acknowledgments ([36615d9](https://github.com/morluto/rea/commit/36615d9165a889c2449037299829538337dcc45e))
+* **mcp:** preserve tuple constraints in advertised schemas ([10aa74d](https://github.com/morluto/rea/commit/10aa74dfedc3ae776f50d1fa1eb83b64ae82d3d6)), closes [#3576](https://github.com/morluto/rea/issues/3576)
+* **release:** install the npm canary before its MCP handshake ([0b4fd11](https://github.com/morluto/rea/commit/0b4fd11c8ccd411b5293f1b343609405cafd3194))
+* **release:** recover verified partial registry publications ([790657d](https://github.com/morluto/rea/commit/790657dc0dd68a6cc292fae70df1aa158ece8ba5))
+* **release:** rehearse qualified packages before publication ([6060de3](https://github.com/morluto/rea/commit/6060de329de9f3636f63e24a2419847fd9d3f889))
+* **release:** restore qualified runtime before the npm canary ([c99c6a8](https://github.com/morluto/rea/commit/c99c6a89d6985881bcad92754f429e39718073d7))
+* **setup:** retain Hermes YAML scalar source during updates ([93e75bc](https://github.com/morluto/rea/commit/93e75bc8fe21780ab1ee517bfda4f4a7730d678d))
+* **test:** honor Ghidra startup budgets in Windows verification ([#3417](https://github.com/morluto/rea/issues/3417)) ([d9cd239](https://github.com/morluto/rea/commit/d9cd239c5ed7b078ac07e1bad633723fb49d8f80))
+
+
+### Tests
+
+* **electron:** isolate active-hook fixture resolution ([#3565](https://github.com/morluto/rea/issues/3565)) ([1579b68](https://github.com/morluto/rea/commit/1579b6865e8ee87873036a39af3e257cc70d6f21)), closes [#3473](https://github.com/morluto/rea/issues/3473)
+* **mcp:** remove cache and event order dependence from fault probes ([b8510ee](https://github.com/morluto/rea/commit/b8510ee00b7c4dc0624bed0e728649cf0606060f))
+* **perf:** measure genuine SAZ selection and retained recovery ([#3584](https://github.com/morluto/rea/issues/3584)) ([357996c](https://github.com/morluto/rea/commit/357996cc89f1a53ccf90731b0bf1d57d20c7d602))
+* **perf:** measure real sigrok annotation selection workflows ([ca1b2f8](https://github.com/morluto/rea/commit/ca1b2f8608c52ed721d3576ba5eeb1d66717b08c))
+
 ## [6.5.0](https://github.com/morluto/rea/compare/rea-agents-6.4.0...rea-agents-6.5.0) (2026-10-13)
 
 Provider prerequisites and recorded verification scope are listed in [the testing guide](docs/testing.md).
